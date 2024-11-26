@@ -1,0 +1,14 @@
+{
+    "title": "todo",
+    "createTodo": "Create a todo",
+    "description": "",
+    "markAsComplete": "Mark as Complete",
+    "markAsInProgress": "Mark as In Progress",
+    "edit": "Edit",
+    "todoDesc": "Todo allows to stay organized with daily routine work.",
+    "addTodo": "Add Todo",
+    "totalTodo": "Total Todo items",
+    "completedTodo": "Completed Todo items",
+    "inprogressTodo": "Inprogress Todo items",
+    "newTodo": "Create a new todo"
+}

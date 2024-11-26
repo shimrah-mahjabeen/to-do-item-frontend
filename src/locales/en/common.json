@@ -1,0 +1,28 @@
+{
+    "welcomeNote": "Greetings, Buddy!",
+    "signOut": "Sign Out",
+    "login": "Login",
+    "dashboard": "Dashboard",
+    "calendar": "Calendar",
+    "title": "Title",
+    "description": "Description",
+    "date": "Date",
+    "signIn": "Sign In",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "close": "Close",
+    "edit": "Edit",
+    "delete": "Delete",
+    "dueOn": "Due On",
+    "inprogress": "In Progress",
+    "completed": "Completed",
+    "all": "All",
+    "next": "Next",
+    "previous": "Previous",
+    "showMore": "show more",
+    "app": "My Todo App",
+    "userName": "User Name",
+    "confirmPassword": "Confirm Password",
+    "loginNow": "Login Now"
+    
+  }

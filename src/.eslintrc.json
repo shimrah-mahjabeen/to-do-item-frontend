@@ -1,0 +1,90 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "import",
+      "prettier"
+    ],
+    "rules": {
+      // React Rules
+      "react/jsx-uses-react": "off", // React 17 JSX Transform
+      "react/react-in-jsx-scope": "off", // React 17 JSX Transform
+      "react/prop-types": "off", // TypeScript takes care of types
+      "react/jsx-filename-extension": [
+        "warn",
+        {
+          "extensions": [".tsx"]
+        }
+      ],
+      "react-hooks/rules-of-hooks": "error", // Enforce hooks rules
+      "react-hooks/exhaustive-deps": "warn", // Enforce hook dependencies
+  
+      // TypeScript Rules
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/explicit-module-boundary-types": "off", // Optional for large projects
+      "@typescript-eslint/ban-ts-comment": "off", // Allows `@ts-ignore` for necessary cases
+      "@typescript-eslint/no-explicit-any": "warn", // Discourage usage of `any`
+  
+      // Import Rules
+      "import/order": [
+        "warn",
+        {
+          "groups": [["builtin", "external"], ["internal", "sibling", "parent", "index"]],
+          "newlines-between": "always"
+        }
+      ],
+      "import/no-unused-modules": [
+        "warn",
+        {
+          "unusedExports": true
+        }
+      ],
+  
+      // Prettier Rules
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": true,
+          "trailingComma": "all",
+          "printWidth": 80,
+          "tabWidth": 2
+        }
+      ],
+  
+      // Miscellaneous Rules
+      "no-console": "warn", // Warn on console logs
+      "no-debugger": "warn", // Warn on debugger statements
+      "no-empty-function": "warn", // Warn on empty functions
+      "no-var": "error", // Enforce `let` or `const` over `var`
+      "prefer-const": "warn", // Encourage `const` when possible
+      "consistent-return": "warn" // Enforce consistent return behavior
+    },
+    "settings": {
+      "react": {
+        "version": "detect" // Automatically detects the React version
+      }
+    }
+  }
+  
